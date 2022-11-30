@@ -1,0 +1,9 @@
+Connect existing RStudio project to GitHub: https://hansenjohnson.org/post/sync-github-repository-with-existing-r-project/
+
+knit your markdown into a file called index.html, stored in the top-level directory (same as the project)
+
+repo must be public for pages to work: settings -> general -> scroll to bottom -> change visibility
+
+to create page: go to Settings -> Pages -> branch:Main, /(root), press Save
+
+Wait a minute and then refresh and click on link, e.g. https://edinkasia.github.io/data-science-tutorial/
