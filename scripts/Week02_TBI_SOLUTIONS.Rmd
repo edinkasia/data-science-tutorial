@@ -35,8 +35,8 @@ You need a new project set up in a dedicated directory. Now, set up folders in y
 Save both datasets in the raw_data folder (use the 'here' library)
 
 ```{r saving-datasets}
-write_csv(tbi_age, file = here("raw_data", "tbi_age.csv"))
-write_csv(tbi_year, file = here("raw_data", "tbi_year.csv"))
+# write_csv(tbi_age, file = here("raw_data", "tbi_age.csv"))
+# write_csv(tbi_year, file = here("raw_data", "tbi_year.csv"))
 ```
 
 ### Task 2
@@ -76,7 +76,7 @@ total_injuries_table <- tbi_age %>%
   pivot_wider(names_from = "type", values_from = "number_est") 
 
 # And now saving the table as a .csv file:
-write_csv(total_injuries_table, file = here("tables", "total_injuries_table.csv"))
+# write_csv(total_injuries_table, file = here("tables", "total_injuries_table.csv"))
 
 # Note: You can pipe into gt() at the end for knitting and easy presentation
 
@@ -139,7 +139,7 @@ hosp_plot_string_wrap
 
 # And now saving the plot:
 
-ggsave(here("plots", "hosp_plot.png"), plot = hosp_plot, dpi = 600, width = 8, height = 6, units = "in")
+ggsave(here("plots", "hosp_plot.png"), plot = hosp_plot_string_wrap, dpi = 600, width = 8, height = 6, units = "in")
 
 ```
 
